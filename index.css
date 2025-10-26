@@ -1,5 +1,6 @@
 /* Simple page management */
     /* Themes */
+        @import url("dark-theme.css");
         @import url("halloween-theme.css");
     body, /* Browsers automatically add these :sob: Past these tho, I will not use either body or html, as this is cheating (i may change this rule in the future) */
     html{

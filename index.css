@@ -4,7 +4,7 @@
     --text2: rgb(255, 255, 255);
     --bg1: black;
     --bg2: rgb(10, 10, 10);
-    --border: white;
+    --border: rgb(34, 34, 34);
 }
 body, /* Browsers automatically add these :sob: */
 html{
@@ -20,13 +20,18 @@ div {
 
 /* Adding a border :D */
 div::before,div::after{ /* applies the border to all sides of the the 2 div sections (yes this adds a link between the top and bottom... */
-    border: 5px solid var(--border);
+    border: 3px solid var(--border);
+    border-radius: 10px;
 }
 div::before{ /* But we remove those parts specifcially /\ */
     border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 div::after{
     border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 /* Making the elements look good! */

@@ -1,12 +1,6 @@
 /* Simple page management */
-    :root{
-        --text: rgb(255, 89, 89);
-        --text2: rgb(255, 255, 255);
-        --bg1: black;
-        --bg2: rgb(10, 10, 10);
-        --border: rgb(34, 34, 34);
-        --border2: rgb(59, 59, 59);
-    }
+    /* Themes */
+        @import url("halloween-theme.css");
     body, /* Browsers automatically add these :sob: Past these tho, I will not use either body or html, as this is cheating (i may change this rule in the future) */
     html{
         margin: 0;

@@ -1,0 +1,66 @@
+/* Simple page management */
+:root{
+    --text: rgb(255, 89, 89);
+    --text2: rgb(255, 255, 255);
+    --bg1: black;
+    --bg2: rgb(10, 10, 10);
+    --border: white;
+}
+body, /* Browsers automatically add these :sob: */
+html{
+    margin: 0;
+    padding: 0;
+}
+div {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--bg1);
+}
+
+/* Adding a border :D */
+div::before,div::after{ /* applies the border to all sides of the the 2 div sections (yes this adds a link between the top and bottom... */
+    border: 5px solid var(--border);
+}
+div::before{ /* But we remove those parts specifcially /\ */
+    border-bottom: none;
+}
+div::after{
+    border-top: none;
+}
+
+/* Making the elements look good! */
+div::after, div::before{
+    background-color: var(--bg2);
+    padding-inline: 20px;
+    transform: translateX(-20px);
+    width: 80%;
+    display: block;
+    position: absolute;
+    left: 10%;
+}
+
+/* Specific styles! */
+div::before{
+    color: var(--text);
+    height: 10%;
+    text-align: center;
+    content: "Welcome to my awesome website!";
+    font-size: 4rem;
+    top: 0;
+}
+div::after{
+    color: var(--text2);
+    background-color: var(--bg2);
+    height: 90%;
+    text-align: left;
+    content: 
+    "Welcome! This website was purly created with `<div></div>` and some css! I decided to make this project after inquiring a free domain name, so I chose the one that fit the website the most! The source code is avalible on `https://github.com/AustinSDK/mycodebaseisbrokenandidontknowwhattodootherthentosayilovecss.codes` which i sadly cant link due to the fact that im limited to not be able to put links onto this page";
+    font-size: 1.4rem;
+    bottom: 0;
+}
+
+/* this is only for my live server extension on vscode */
+#fiveserver-info-wrapper{
+    display: none !important;
+}

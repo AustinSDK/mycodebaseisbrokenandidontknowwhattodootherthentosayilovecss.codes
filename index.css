@@ -1,89 +1,89 @@
 /* Simple page management */
-:root{
-    --text: rgb(255, 89, 89);
-    --text2: rgb(255, 255, 255);
-    --bg1: black;
-    --bg2: rgb(10, 10, 10);
-    --border: rgb(34, 34, 34);
-    --border2: rgb(59, 59, 59);
-}
-body, /* Browsers automatically add these :sob: Past these tho, I will not use either body or html, as this is cheating (i may change this rule in the future) */
-html{
-    margin: 0;
-    padding: 0;
-}
-div {
-    width: 100vw;
-    height: 100vh;
+    :root{
+        --text: rgb(255, 89, 89);
+        --text2: rgb(255, 255, 255);
+        --bg1: black;
+        --bg2: rgb(10, 10, 10);
+        --border: rgb(34, 34, 34);
+        --border2: rgb(59, 59, 59);
+    }
+    body, /* Browsers automatically add these :sob: Past these tho, I will not use either body or html, as this is cheating (i may change this rule in the future) */
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    div {
+        width: 100vw;
+        height: 100vh;
 
-    background-color: var(--bg1);
-}
+        background-color: var(--bg1);
+    }
 
 /* Adding a border :D */
-div::before,div::after{ /* applies the border to all sides of the the 2 div sections (yes this adds a link between the top and bottom... */
-    border: 3px solid var(--border);
-    border-radius: 10px;
-}
-div::before{ /* But we remove those parts specifcially /\ */
-    border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-div::after{
-    border-top: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
+    div::before,div::after{ /* applies the border to all sides of the the 2 div sections (yes this adds a link between the top and bottom... */
+        border: 3px solid var(--border);
+        border-radius: 10px;
+    }
+    div::before{ /* But we remove those parts specifcially /\ */
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    div::after{
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 
 /* Making the elements look good! */
-div::after, div::before{
-    background-color: var(--bg2);
-    padding-inline: 20px;
-    transform: translateX(-20px);
-    width: 80%;
-    display: block;
-    position: absolute;
-    left: 10%;
-}
+    div::after, div::before{
+        background-color: var(--bg2);
+        padding-inline: 20px;
+        transform: translateX(-20px);
+        width: 80%;
+        display: block;
+        position: absolute;
+        left: 10%;
+    }
 
 /* Specific styles! */
-div::before{
-    color: var(--text);
-    height: 10%;
-    text-align: center;
-    content: "Welcome to my awesome website!";
-    font-size: 4rem;
-    top: 5%;
-}
-div::after{
-    color: var(--text2);
-    background-color: var(--bg2);
-    height: 80%;
-    text-align: left;
-    content: 
-    "Welcome! This website was purly created with `<div></div>` and some css! I decided to make this project after inquiring a free domain name, so I chose the one that fit the website the most! The source code is avalible on `https://github.com/AustinSDK/mycodebaseisbrokenandidontknowwhattodootherthentosayilovecss.codes` which i sadly cant link due to the fact that im limited to not be able to put links onto this page. This page is best viewable on specific resolutions, so I'm sorry if it looks bad. You may be wondering why you cant select text, well the text is here its not a image or a svg or anything, just css inserted text isnt selectable (as of ff)! Wait... hear me out... <noscript>Hey, this site requires JavaScript to function!</noscript>";
-    font-size: 1.4rem;
-    bottom: 5%;
-}
+    div::before{
+        color: var(--text);
+        height: 10%;
+        text-align: center;
+        content: "Welcome to my awesome website!";
+        font-size: 4rem;
+        top: 5%;
+    }
+    div::after{
+        color: var(--text2);
+        background-color: var(--bg2);
+        height: 80%;
+        text-align: left;
+        content: 
+        "Welcome! This website was purly created with `<div></div>` and some css! I decided to make this project after inquiring a free domain name, so I chose the one that fit the website the most! The source code is avalible on `https://github.com/AustinSDK/mycodebaseisbrokenandidontknowwhattodootherthentosayilovecss.codes` which i sadly cant link due to the fact that im limited to not be able to put links onto this page. This page is best viewable on specific resolutions, so I'm sorry if it looks bad. You may be wondering why you cant select text, well the text is here its not a image or a svg or anything, just css inserted text isnt selectable (as of ff)! Wait... hear me out... <noscript>Hey, this site requires JavaScript to function!</noscript>";
+        font-size: 1.4rem;
+        bottom: 5%;
+    }
 
 /* Mouse over effects! Yes i realized this highlights if your mouse is in the page at all, but 2 bad*/
-div:hover::after,
-div:hover::before{
-    border-color: var(--border2);
-}
-div:hover::after, 
-div:hover::before,
-div:hover,
-div::after,
-div::before,
-div{
-    transition: transform .2s, border-color .2s;
-}
-/*div::before:hover{            I dont believe this is possible, div ::before :hover doesnt exist i guess 
-    background-color: black;
-}*/
+    div:hover::after,
+    div:hover::before{
+        border-color: var(--border2);
+    }
+    div:hover::after, 
+    div:hover::before,
+    div:hover,
+    div::after,
+    div::before,
+    div{
+        transition: transform .2s, border-color .2s;
+    }
+    /*div::before:hover{            I dont believe this is possible, div ::before :hover doesnt exist i guess 
+        background-color: black;
+    }*/
 
 /* this is only for my live server extension on vscode */
-#fiveserver-info-wrapper{
-    display: none !important;
-}
+    #fiveserver-info-wrapper{
+        display: none !important;
+    }

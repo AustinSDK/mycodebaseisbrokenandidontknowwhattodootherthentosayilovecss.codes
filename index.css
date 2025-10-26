@@ -6,7 +6,7 @@
     --bg2: rgb(10, 10, 10);
     --border: rgb(34, 34, 34);
 }
-body, /* Browsers automatically add these :sob: */
+body, /* Browsers automatically add these :sob: Past these tho, I will not use either body or html, as this is cheating (i may change this rule in the future) */
 html{
     margin: 0;
     padding: 0;
@@ -52,17 +52,17 @@ div::before{
     text-align: center;
     content: "Welcome to my awesome website!";
     font-size: 4rem;
-    top: 0;
+    top: 5%;
 }
 div::after{
     color: var(--text2);
     background-color: var(--bg2);
-    height: 90%;
+    height: 80%;
     text-align: left;
     content: 
-    "Welcome! This website was purly created with `<div></div>` and some css! I decided to make this project after inquiring a free domain name, so I chose the one that fit the website the most! The source code is avalible on `https://github.com/AustinSDK/mycodebaseisbrokenandidontknowwhattodootherthentosayilovecss.codes` which i sadly cant link due to the fact that im limited to not be able to put links onto this page";
+    "Welcome! This website was purly created with `<div></div>` and some css! I decided to make this project after inquiring a free domain name, so I chose the one that fit the website the most! The source code is avalible on `https://github.com/AustinSDK/mycodebaseisbrokenandidontknowwhattodootherthentosayilovecss.codes` which i sadly cant link due to the fact that im limited to not be able to put links onto this page. This page is best viewable on specific resolutions, so I'm sorry if it looks bad. You may be wondering why you cant select text, well the text is here its not a image or a svg or anything, just css inserted text isnt selectable (as of ff)!";
     font-size: 1.4rem;
-    bottom: 0;
+    bottom: 5%;
 }
 
 /* this is only for my live server extension on vscode */

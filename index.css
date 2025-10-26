@@ -38,6 +38,14 @@
         border-top-right-radius: 0;
     }
 
+    /* And now a dropshadow */
+    body::after{
+        box-shadow: 0px 10px 5px var(--drop-shadow);
+    }
+    body:hover:after{
+        box-shadow: 0px 10px 2px var(--drop-shadow2);
+    }
+
 /* Making the elements look good! */
     body::after, body::before{
         background-color: var(--bg2);
@@ -57,6 +65,8 @@
         content: "Welcome to my awesome website!";
         font-size: 4rem;
         top: 5%;
+
+        font-weight: 700;
     }
     body::after{
         color: var(--text2);
@@ -80,7 +90,7 @@
     body::after,
     body::before,
     body{
-        transition: transform .2s, border-color .2s;
+        transition: transform .2s, border-color .2s, box-shadow .2s;
     }
     /*body::before:hover{            I dont believe this is possible, body ::before :hover doesnt exist i guess 
         background-color: black;

@@ -5,4 +5,7 @@
     --bg2: rgb(10, 10, 10);
     --border: rgb(34, 34, 34);
     --border2: rgb(59, 59, 59);
+
+    --drop-shadow: rgb(14, 14, 14);
+    --drop-shadow2: rgb(24, 24, 24);
 }
